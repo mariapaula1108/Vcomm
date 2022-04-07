@@ -1,0 +1,21 @@
+:root { 
+  --dove-gray: #707070;
+  --tangaroa: #021f3a;
+  --white: #ffffff;
+ 
+  --font-size-m: 24px;
+  --font-size-s: 20px;
+ 
+  --font-family-poppins: "Poppins", Helvetica;
+}
+.poppins-semi-bold-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-s);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.border-1px-dove-gray {
+  border: 1px solid var(--dove-gray);
+}

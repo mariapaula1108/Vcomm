@@ -10,14 +10,13 @@ import rideResult from './Result-new.json'
 
 export default class Maps extends Component {
   render() {
-
-
     return (
       <MapContainer center={[32.07641, 34.77362]} zoom={13}>
          <TileLayer
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+          
           
       </MapContainer>
     );
