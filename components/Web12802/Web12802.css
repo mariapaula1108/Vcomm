@@ -1,0 +1,188 @@
+.web-1280-2 {
+  align-items: flex-start;
+  background-color: #fbfbfb;
+  display: flex;
+  overflow: hidden;
+  width: 1280px;
+}
+
+.dashboard {
+  align-items: flex-start;
+  display: flex;
+  min-width: 280px;
+  z-index: 3;
+}
+
+.overlap-group-1 {
+  height: 5000px;
+  position: relative;
+  width: 280px;
+}
+
+.blue-rectangle-1 {
+  background-color: var(--tangaroa);
+  height: 5000px;
+  left: 1px;
+  top: 2px;
+  width: 279px;
+}
+
+
+.white-rectangle-1 {
+  height: 59px;
+  left: 24px;
+  object-fit: cover;
+  position: absolute;
+  top: 227px;
+  width: 256px;
+}
+
+.trip-summary-title-1 {
+  color: var(--white);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  left: 90px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 168px;
+  white-space: nowrap;
+}
+
+.main-title-1 {
+  left: 24px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  top: 107px;
+  white-space: nowrap;
+}
+
+.vcomm-logo-1 {
+  height: 95px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 279px;
+}
+
+.safety-events-title-1 {
+  color: var(--tangaroa);
+  font-family: var(--font-family-poppins);
+  font-size: var(--font-size-m);
+  font-weight: 400;
+  left: 93px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: absolute;
+  top: 244px;
+  white-space: nowrap;
+}
+
+.house-icon-2-1 {
+  height: 28px;
+  left: 43px;
+  object-fit: cover;
+  position: absolute;
+  top: 242px;
+  width: 25px;
+}
+
+.house-icon-1 {
+  height: 15px;
+  left: 51px;
+  object-fit: cover;
+  position: absolute;
+  top: 255px;
+  width: 10px;
+}
+
+.group-349 {
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 59px;
+  left: 0;
+  position: fixed;
+  top: 210px;
+  width: 287px;
+  z-index: 2;
+}
+
+.main {
+  left: 24px;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: fixed;
+  top: 105px;
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.event-streets{
+  color: var(--black);
+  cursor: pointer;
+  font-family: var(--font-family-poppins);
+  font-size: 16px;
+  font-weight: 400;
+  left: 40px;
+  letter-spacing: 0;
+  line-height: 24px;
+  
+  top: 95px;
+  white-space: nowrap;
+}
+
+.safety-events-title-page{
+  left: 770px;
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+  color: #021F3A;
+  font-weight: 'bold';
+}
+
+.events-box{
+  background-color: var(--white);
+  border-radius: 20px;
+  height: 350px;
+  width: 595px;
+  left: 50px;
+  align-items: center;
+ 
+  
+}
+
+.safety-events-box-title{
+  left: 100px;
+  top: 100px;
+  font-size: 18px;
+  font-family: var(--font-family-poppins);
+  font-weight: 200px;
+  align-items: center;
+}
+
+.safety1{
+  left: 30px;
+  top: 20px;
+  position: relative;
+
+}
+
+.events-and-title{
+  align-items: center;
+  left: 210px;
+  position: relative;
+  top: 100px;
+  margin-bottom: 20px;
+  
+}
+
+.Event-Maps{
+  top: 10px;
+  left: 120px;
+  position: relative;
+  height: 450px;
+  width: 595px;
+}

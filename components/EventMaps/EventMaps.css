@@ -1,0 +1,15 @@
+
+  
+  .ride-coordinates{
+    color: var(--black);
+    cursor: pointer;
+    font-family: var(--font-family-poppins);
+    font-size: 16px;
+    font-weight: 400;
+    left: 40px;
+    letter-spacing: 0;
+    line-height: 24px;
+    position: absolute;
+    top: 95px;
+    white-space: nowrap;
+  }

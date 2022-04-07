@@ -1,0 +1,27 @@
+.events-box{
+  background-color: var(--white);
+  border-radius: 20px;
+  margin-left: 1.0px;
+  width: 595px;
+  left: 600px;
+  position: absolute;
+}
+
+
+.safety-events-box-title{
+    left: 20px;
+    position: absolute;
+    top: 20px;
+    font-size: 18px;
+    font-family: var(--font-family-poppins);
+    font-weight: 200px;
+  }
+  
+  .ride-time-box {
+    background-color: var(--white);
+    border-radius: 20px;
+    height: 70px;
+    margin-left: 1.0px;
+    margin-top: 80px;
+    width: 385px;
+  }
