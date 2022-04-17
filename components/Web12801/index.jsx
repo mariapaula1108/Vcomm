@@ -14,6 +14,7 @@ import { MapContainer, TileLayer } from 'react-leaflet';
 import rideResult from './Result-new.json'
 
 
+
 function Web12801(props) {
   const {
     whiteRectangle,
@@ -58,26 +59,27 @@ function Web12801(props) {
           <div className="ride-overview-box border-1px-dove-gray">
             <div className="ride-overview"> {rideOverviewTitle} </div>
             <div className="ride-time-box border-1px-dove-gray">
-              <div className="ride-time-date"> {ridedatescore.datetime} </div>
               <div className="ride-time"> {rideTimeTitle} </div>
-              </div>
-              <div className = "map-container">
-                <Maps style ={{position: "stati"}}/>
+              <div className="ride-time-date"> {ridedatescore.datetime} </div>
+            </div>
+            <div className="map-container">
+              <Maps style={{ position: "static" }} />
             </div>
             <Link to="/web-1280-2">
               <Button className="tripdetails-button">Trip Details</Button>
             </Link>
+
           </div>
-          <div className="score-bar" >
+          <div className="ride-overview-box border-1px-dove-gray">
+            <div className="score-title">Score </div>
+            <div className="score-count"> Number of safety events: {ridedatescore.count} </div>
+            <div className="score-bar" >
             <CircularProgressbar
               value={ridedatescore.score}
               text={ridedatescore.score}
               styles={buildStyles({ pathColor: '#88CA5E', textColor: '#88CA5E', trailColor: '#FF2E2E' })}
             />
           </div>
-          <div className="ride-overview-box border-1px-dove-gray">
-            <div className="score-title">Score </div>
-            <div className="score-count"> Number of safety events: {ridedatescore.count} </div>
             <Link to="/web-1280-2">
               <Button className="score-button">See More</Button>
             </Link>

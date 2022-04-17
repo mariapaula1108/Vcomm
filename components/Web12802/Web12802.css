@@ -2,8 +2,8 @@
   align-items: flex-start;
   background-color: #fbfbfb;
   display: flex;
-  overflow: hidden;
-  width: 1280px;
+  width: 100%;
+  
 }
 
 .dashboard {
@@ -135,12 +135,13 @@
 }
 
 .safety-events-title-page{
-  left: 770px;
+  left: 690px;
   position: absolute;
   top: 20px;
   font-size: 30px;
   color: #021F3A;
   font-weight: 'bold';
+  
 }
 
 .events-box{

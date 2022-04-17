@@ -6,18 +6,23 @@ import './EventMaps.css'
 import 'leaflet/dist/leaflet.css'
 import 'leaflet-draw/dist/leaflet.draw.css'
 import rideResult from './Result-new.json'
+import rideOutline from './ride.json'
 
 
 export default class Maps extends Component {
   render() {
     return (
-      <MapContainer center={[32.07641, 34.77362]} zoom={13}>
-         <TileLayer
-            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          />
-          
-          
+
+      <MapContainer center={[32.074241, 34.77362]} zoom={14}>
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        {rideOutline.map(outline2 => {
+          return (
+            <Polyline positions={[[outline2.properties.start_y, outline2.properties.start_x], [outline2.properties.end_y, outline2.properties.end_x]]} />
+          )
+        })}
       </MapContainer>
     );
   }
