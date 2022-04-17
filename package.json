@@ -1,8 +1,12 @@
 {
+  
   "name": "react-package",
+  "homepage": "https://mariapaula1108.github.io/vcomm/",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
@@ -25,6 +29,7 @@
     "@babel/preset-env": "^7.12.7",
     "@babel/preset-react": "^7.12.7",
     "@types/leaflet": "^1.7.9",
+    "gh-pages": "^3.2.3",
     "parcel-plugin-static-files-copy": "^2.5.0"
   }
 }
