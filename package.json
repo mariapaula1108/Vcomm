@@ -1,7 +1,6 @@
 {
-  
   "name": "react-package",
-  "homepage": "https://mariapaula1108.github.io/vcomm/",
+  "homepage": "https://github.com/mariapaula1108/vcomm/",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
