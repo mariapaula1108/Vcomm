@@ -5,7 +5,7 @@
     "start": "parcel index.html",
     "build": "parcel build index.html --no-minify",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",
