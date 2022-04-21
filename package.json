@@ -3,7 +3,7 @@
   "homepage": "https://github.com/mariapaula1108/vcomm/",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --no-minify",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
