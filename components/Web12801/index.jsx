@@ -50,7 +50,7 @@ function Web12801(props) {
             />
             <div className="main-title poppins-semi-bold-white-20px">{mainTitle}</div>
             <img className="vcomm-logo" src={vcommLogo} />
-            <Link to="/web-1280-2">
+            <Link to="../components/Web12802/index.jsx">
               <div className="safety-events-title">{safetyEventsTitle}</div>
             </Link>
             <img className="house-icon-2" src={houseIcon2} />
@@ -65,7 +65,7 @@ function Web12801(props) {
             <div className="map-container">
               <Maps style={{ position: "static" }} />
             </div>
-            <Link to="/web-1280-2">
+            <Link to="../components/Web12802/index.jsx">
               <Button className="tripdetails-button">Trip Details</Button>
             </Link>
 
@@ -80,7 +80,7 @@ function Web12801(props) {
               styles={buildStyles({ pathColor: '#88CA5E', textColor: '#88CA5E', trailColor: '#FF2E2E' })}
             />
           </div>
-            <Link to="/web-1280-2">
+            <Link to="../components/Web12802/index.jsx">
               <Button className="score-button">See More</Button>
             </Link>
           </div>
