@@ -11,6 +11,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
 import 'bootstrap/dist/css/bootstrap.css';
 import Dropdown from 'react-bootstrap/Dropdown';
+import speeding2 from './violation1.json';
 
 function Web12802(props) {
   const {
@@ -32,6 +33,14 @@ function Web12802(props) {
     return L.icon({
       iconUrl: require("./warning3.png"),
       _iconSize: _iconSize
+    })
+  }
+
+  function getIcon2(_iconSize) {
+    return L.icon({
+      iconUrl: require("./warning-yellow.png"),
+      _iconSize: _iconSize
+  
     })
   }
 
@@ -117,7 +126,39 @@ function Web12802(props) {
                         </Marker>
                       </MapContainer>
                     </div>
-
+                  </div>
+                  <div style={{ margin: 30 }}> </div>
+                </>
+              )
+            })}
+                {speeding2.map(speeding => {
+              return (
+                <>
+                  <div key={speeding.properties.value} className="events-box border-1px-dove-gray">
+                    <p className="safety1">Speeding at {Math.ceil(speeding.properties.speed_x)} KM during Intersection </p>
+                    <div className="Event-Maps">
+                      <MapContainer center={[speeding.properties.y_coords, speeding.properties.x_coords]} zoom={18}>
+                        <TileLayer
+                          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        {rideOutline.map(outline2 => {
+                          return (
+                            <Polyline positions={[[outline2.properties.start_y, outline2.properties.start_x], [outline2.properties.end_y, outline2.properties.end_x]]} />
+                          )
+                        })}
+                        <Marker
+                          position={[speeding.properties.y_coords, speeding.properties.x_coords]}
+                          icon={getIcon2(2)}>
+                          <Popup>
+                            <div>
+                              <h6> Speeding in Intersection </h6>
+                              <p> Driving at {Math.ceil(speeding.properties.speed_x)} KM during intersection  </p>
+                            </div>
+                          </Popup>
+                        </Marker>
+                      </MapContainer>
+                    </div>
                   </div>
                   <div style={{ margin: 30 }}> </div>
                 </>
