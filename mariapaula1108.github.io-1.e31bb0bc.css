@@ -1119,15 +1119,15 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .overlap-group-1 {
-  height: 5000px;
+  height: 17300px;
   position: relative;
   width: 280px;
 }
 
 .blue-rectangle-1 {
   background-color: var(--tangaroa);
-  height: 5000px;
-  left: 1px;
+  height: 17300px;
+  left: 0px;
   top: 2px;
   width: 279px;
 }
